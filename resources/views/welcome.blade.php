@@ -71,13 +71,28 @@
 
       <div class="album text-muted">
         <div class="container">
-
-          @foreach ($tasks as $task)
-            <div class="card">
-              <p class="card-text"> {{ $task->id }} {{ $task->name }} {{ $task->email }} {{ $task->password }} {{ $task->created_at }}</p>
-            </div>
-          @endforeach
-
+          <table class='table'>
+            <thead>
+              <tr class='table-head'>
+                <td>ID</td>
+                <td>Name</td>
+                <td>Email</td>
+                <td>Password</td>
+                <td>Created</td>
+              </tr>
+            </thead>
+            @foreach ($tasks as $task)
+              <tr>
+                <div>
+                  <td> {{ $task->id }} </td>
+                  <td> {{ $task->name }} </td> 
+                  <td> {{ $task->email }} </td>
+                  <td> {{ $task->password }} </td> 
+                  <td> {{ $task->created_at }} </td>
+                </div>
+              </tr>
+            @endforeach
+          </table>
         </div>
       </div>
 
@@ -88,8 +103,7 @@
         <p class="float-right">
           <a href="#">Back to top</a>
         </p>
-        <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-        <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
+        <p>Nathan Clark Baumgartner</p>
       </div>
     </footer>
   </body>

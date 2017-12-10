@@ -32,9 +32,12 @@ body {
   background-color: #f7f7f7;
 }
 
+.table-head {
+  font-weight: bold;
+}
+
 .card {
   float: left;
-  width: 100%;
   padding: .75rem;
   margin-bottom: 2rem;
   border: 0;
