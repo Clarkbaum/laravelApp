@@ -13,6 +13,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <!-- Custom styles for this template -->
     <link href="/css/users.css" rel="stylesheet">
+    {{-- css for data tables --}}
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+    {{-- js for data tables --}}
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
   </head>
 
   <body>
@@ -36,7 +42,7 @@
 
       <div class="user-body text-muted">
         <div class="container">
-          <table class='table'>
+          <table id='data-table' class='table'>
             <thead>
               <tr class='table-head'>
                 <td>ID</td>
@@ -71,5 +77,10 @@
         <p>Nathan Clark Baumgartner</p>
       </div>
     </footer>
+    <script>
+      $(document).ready(function() {
+        $('#data-table').DataTable({"paging": false});
+      } );
+    </script>
   </body>
 </html>
