@@ -1,9 +1,16 @@
 # laravelApp
 Laravel app
 
-# steps to start
+# Steps to Start
 
+```
 brew services start mysql
-mysql -uroot -p (to get in)
+```
 
+```
+mysql -uroot -p (to get in)
+```
+
+```
 php artisan serve
+```
