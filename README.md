@@ -8,10 +8,6 @@ brew services start mysql
 ```
 
 ```
-npm install
-```
-
-```
 mysql -uroot -p (to get in)
 ```
 

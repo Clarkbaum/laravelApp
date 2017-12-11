@@ -36,7 +36,7 @@
       <section class="jumbotron text-center">
         <div class="container">
           <h1 class="jumbotron-heading">Laravel Users App</h1>
-          <p class="lead text-muted">Laravel application that returns all 20 users from mySQL database<p>
+          <p class="lead text-muted">Laravel application that returns all users from mySQL database<p>
         </div>
       </section>
 
