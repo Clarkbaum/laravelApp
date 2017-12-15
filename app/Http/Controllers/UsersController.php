@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Users;
+use App\User;
 
 class UsersController extends Controller
 {
   public function index() {
-    //using model extending eloquent
-    $tasks = Users::getAll();
+
+    $tasks = User::all();
 
     return view('welcome', compact('tasks'));
   }

@@ -59,7 +59,7 @@
                   <td> {{ $task->name }} </td> 
                   <td> {{ $task->email }} </td>
                   <td> {{ $task->password }} </td> 
-                  <td> {{ $task->created_at }} </td>
+                  <td> {{ $task->created_at->diffForHumans() }} </td>
                 </div>
               </tr>
             @endforeach
