@@ -55,11 +55,11 @@
             @foreach ($tasks as $task)
               <tr>
                 <div>
-                  <td> {{ $task->id }} </td>
-                  <td> {{ $task->name }} </td> 
-                  <td> {{ $task->email }} </td>
-                  <td> {{ $task->password }} </td> 
-                  <td> {{ $task->created_at->diffForHumans() }} </td>
+                  <td> {{ $task['id'] }} </td>
+                  <td> {{ $task['name'] }} </td> 
+                  <td> {{ $task['email'] }} </td>
+                  <td> ******* </td> {{-- password field is hidden, i can no longer print it --}}
+                  <td> {{ \Carbon\Carbon::parse($task['created_at'])->diffForHumans() }} </td>
                 </div>
               </tr>
             @endforeach

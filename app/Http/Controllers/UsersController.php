@@ -8,7 +8,8 @@ class UsersController extends Controller
 {
   public function index() {
 
-    $tasks = User::all();
+    $tasks = User::all()->toArray();
+    // $tasks = User::all();
 
     return view('welcome', compact('tasks'));
   }
